@@ -8,6 +8,38 @@
     <link rel="stylesheet" href="css/library.css">
 </head>
 <body>
+    <h1>Books</h1>
+    <table class="book-table">
+        <tr>
+            <td>id</td>
+            <td>title</td>
+            <td>description</td>
+            <td>genre</td>
+            <td>status</td>
+            <td>erase</td>
+        </tr>
+    </table>
+
+    <button id="new-book">new book</button>
+    <form action="index.html" method="get" id="book-form">
+        <div>
+            <label for="title">Title: </label>
+            <input type="text" id="title" name="title">
+        </div>
+        <div>
+            <label for="description">Description: </label>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="genre"></label>
+            <input type="text" id="genre" name="genre">
+        </div>
+        <div>
+            <label for="status">status</label>
+            <input type="text" id="status" name="status">
+        </div>
+        <input type="submit" value="Add book">
+    </form>
 
     <script src="js/library.js"></script>
     
