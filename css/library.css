@@ -1,7 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* variable to make form popup */
 :root {
     --foo : none;
 }
 
 form {
     display:var(--foo);
+}
+
+/* table appareance */
+h1 {
+    background-color: black;
+    color: white;
+}
+
+table {
+    margin: 2% 10%;
+    width: 80%;
+    border: solid;
+    background-color: aqua;
+}
+table td {
+    background-color: tomato;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+table td button {
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+
+/* new book button */
+#new-book {
+    position: relative;
+    left: 83%;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: aqua;
+}
+
+/* book form */
+form div {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+form label {
+    margin-left: 15%;
+}
+form input {
+    width: 80%;
+    margin-left: 10%;
+}
+form textarea{
+    width: 80%;
+    margin-left: 10%;
+}
+form :nth-child(5) {
+    margin-top: 1rem;
 }

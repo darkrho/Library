@@ -41,6 +41,7 @@ function addBookToTable(book) {
     let row = document.createElement("tr");
     row.setAttribute("class",`row${book.id}` )
     for ( var prop in book) {
+      
         let column = document.createElement("td");
         column.textContent = book[prop];
         row.appendChild(column);
